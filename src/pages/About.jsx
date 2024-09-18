@@ -1,13 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import CTA from '../components/CTA'
 
 function About() {
     return (
         <>
 
-            <section className='min-h-96 bg-cover bg-fixed  bg-no-repeat bg-about-bg md:px-24 pb-14 pt-48 -mt-[88px]  relative overflow-x-clip'>
+            <section className='min-h-screen bg-cover bg-fixed  bg-no-repeat bg-about-bg -mt-[88px]  relative overflow-x-clip flex justify-center items-center'>
                 <div className='absolute inset-0 bg-black-300 '></div>
                 <h1 className='text-center text-6xl font-bold text-white relative'>About Us</h1>
+
             </section>
             <section className=" relative ">
                 <div
@@ -68,8 +69,9 @@ function About() {
             <section className=''>
 
             </section>
-            <section className=' bg-cover bg-fixed  bg-no-repeat bg-about-bg relative mt-20 md:px-24 pb-14 text-justify'>
-                <div className='absolute inset-0 bg-gradient-to-r from-black via-black-500 to-transparent '></div>
+            <section className='relative mt-20 md:px-24 pb-14 text-justify overflow-x-clip'>
+                <div className="w-full h-full rounded-full bg-gradient-to-r from-[#58AEF1] to-pink-500 absolute -top-12 -right-14 blur-2xl opacity-10 "></div>
+
                 <h1 className='text-3xl font-extrabold bg-gradient-to-r from-cyan-500 to-fuchsia-500 inline px-5 py-2 md:-ml-10 ml-2 relative'>Why choose us?</h1>
                 <div className="lg:flex ">
                     <div className='lg:w-1/2 lg:mx-0 mx-10 mt-10'>
@@ -81,21 +83,7 @@ function About() {
                     <div className='w-1/3  mx-10'> </div>
                 </div>
             </section>
-            <section className="overflow-x-clip  py-16 px-8 text-center relative">
-                <div className="w-full h-full rounded-full bg-gradient-to-r from-[#58AEF1] to-pink-500 absolute -top-12 -right-14 blur-2xl opacity-10"></div>
-                <div className="max-w-3xl mx-auto text-white relative">
-                    <h2 className="text-4xl font-extrabold mb-4">
-                        Take Your Business to the Next Level
-                    </h2>
-                    <p className="text-lg mb-6">
-                        Join us today and get a free consultation to boost your digital presence.
-                        Let's grow your business with tailored IT solutions.
-                    </p>
-                    <button className="bg-white text-blue-600 px-6 py-3 rounded-md font-semibold shadow-md hover:bg-gray-200">
-                        Get Started Now
-                    </button>
-                </div>
-            </section>
+            <CTA/>
         </>
     )
 }

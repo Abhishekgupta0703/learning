@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import circle from "../assets/circle.webp"
+import AboutImg from "../assets/about-bg.jpg"
 function Home() {
     const stats = [
         {
@@ -80,7 +81,7 @@ function Home() {
                             "linear-gradient(143.6deg, rgba(192, 132, 252, 0) 20.79%, rgba(232, 121, 249, 0.16) 40.92%, rgba(35, 127, 255, 0.08) 70.35%"
                     }}
                 ></div>
-                <div className="absolute z-0 -right-32 animate-spin-slow  w-1/2"><img src="https://www.bytescrum.com/images/circle.webp" alt="" className="" /></div>
+                <div className="absolute z-0 -right-32 animate-spin-slow  w-1/2 "><img src={circle} alt="" className="" /></div>
                 <section className="mx-auto max-w-screen-xl pb-12 px-4 items-center lg:flex md:px-8 z-10">
                     <div className="space-y-4 flex-1 sm:text-center lg:text-left">
                         <h1 className="text-white font-bold text-4xl xl:text-5xl">
@@ -177,7 +178,7 @@ function Home() {
                         </h2>
                     </div>
                     <div className="flex justify-between mt-20">
-                        <div className="w-2/5 overflow-hidden rounded-full">
+                        <div className="w-2/5 overflow-hidden rounded-full ">
                             <img src="https://www.bytescrum.com/_next/image/?url=%2Fimages%2Faboutus.webp&w=640&q=75" alt="" />
                         </div>
                         <div className="w-1/2">

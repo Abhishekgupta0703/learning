@@ -1,36 +1,38 @@
 export const links = [
-   
-    {
-      name: "Services",
-      submenu: true,
-      sublinks: [
-        { name: "Website Development", link:"/WebsiteDevelopment" },
-        { name: "Mobile App Development", link:"/MobileDevelopment" },
-        { name: "Digital Marketing", link:"/DigitalMarketing" },
-        { name: "Graphics Designing", link:"/GraphicsDesigning" },
-        { name: "Domain & Hosting", link:"/DomainAndHosting" },
-        { name: "Maintenance Services", link:"/MaintenanceServices" },
-        { name: "Other IT Services", link:"/ITServices" },
-      ],
-    },
-    {
-      name: "E-Learning",
-      submenu: true,
-      sublinks: [
-        { name: "Data Structure & Algorithm", link:"/DSA" },
-        { name: "Web Development", link:"/WebDevelopment" },
-        { name: "App Development", link:"/AppDevelopment" },
-        { name: "Coding Languages", link:"/CodingLanguages" },
-        { name: "Micro Courses", link:"/MicroCourses" },
-      ],
-    },
-    {
-      name: "Our Portfolio",
-      submenu: true,
-      sublinks: [
-        { name: "Our Projects", link:"/OurProjects" },
-        { name: "Our Clients", link:"/OurClients" },
-        { name: "Our Students", link:"/OurStudents" },
-      ],
-    },
-  ];
+  {
+    name: "Services",
+    link: "/Services", // Main link for Services
+    submenu: true,
+    sublinks: [
+      { name: "Website Development", link: "/Services#WebsiteDevelopment" },
+      { name: "Mobile App Development", link: "/Services#MobileDevelopment" },
+      { name: "Digital Marketing", link: "/Services#DigitalMarketing" },
+      { name: "Graphics Designing", link: "/Services#GraphicsDesigning" },
+      { name: "Domain & Hosting", link: "/Services#DomainAndHosting" },
+      { name: "Maintenance Services", link: "/Services#MaintenanceServices" },
+      { name: "Other IT Services", link: "/Services#ITServices" },
+    ],
+  },
+  {
+    name: "E-Learning",
+    link: "/ELearning", // Main link for E-Learning
+    submenu: true,
+    sublinks: [
+      { name: "Data Structure & Algorithm", link: "/ELearning#DSA" },
+      { name: "Web Development", link: "/ELearning#WebDevelopment" },
+      { name: "App Development", link: "/ELearning#AppDevelopment" },
+      { name: "Coding Languages", link: "/ELearning#CodingLanguages" },
+      { name: "Micro Courses", link: "/ELearning#MicroCourses" },
+    ],
+  },
+  {
+    name: "Our Portfolio",
+    link: "/Portfolio", // Main link for Our Portfolio
+    submenu: true,
+    sublinks: [
+      { name: "Our Projects", link: "/Portfolio#OurProjects" },
+      { name: "Our Clients", link: "/Portfolio#OurClients" },
+      { name: "Our Students", link: "/Portfolio#OurStudents" },
+    ],
+  },
+];
